@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+if [ "$1" = "remove" ]; then
+  update-alternatives --remove lightdm-greeter /usr/share/xgreeters/lightdm-gtk-greeter.desktop
+fi
+
+# Automatically added by dh_installdeb/11.3.2ubuntu1
+dpkg-maintscript-helper rm_conffile /etc/lightdm/lightdm-gtk-greeter.conf.d/01_ubuntu.conf 2.0.1-2ubuntu3 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb/11.3.2ubuntu1
+dpkg-maintscript-helper rm_conffile /etc/lightdm/lightdm-gtk-greeter-ubuntu.conf 2.0.1-2ubuntu3 -- "$@"
+# End automatically added section
+
+
+exit 0

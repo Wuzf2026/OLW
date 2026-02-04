@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/bin
+/usr/bin/drmdevice
+/usr/bin/kms-steal-crtc
+/usr/bin/kms-universal-planes
+/usr/bin/kmstest
+/usr/bin/modeprint
+/usr/bin/modetest
+/usr/bin/proptest
+/usr/bin/vbltest
+/usr/share
+/usr/share/doc
+/usr/share/doc/libdrm-tests
+/usr/share/doc/libdrm-tests/changelog.Debian.gz
+/usr/share/doc/libdrm-tests/copyright

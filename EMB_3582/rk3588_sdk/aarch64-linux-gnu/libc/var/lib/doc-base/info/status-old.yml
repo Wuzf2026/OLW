@@ -1,0 +1,6 @@
+---
+/internal/sc-status: 0
+findutils:
+  CF:
+    /usr/share/doc-base/findutils: ~
+  SD: {}

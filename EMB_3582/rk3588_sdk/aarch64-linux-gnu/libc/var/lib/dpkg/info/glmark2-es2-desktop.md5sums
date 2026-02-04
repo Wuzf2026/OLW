@@ -1,0 +1,10 @@
+79b84cdecac44f66e342cacbfa4da48a  usr/bin/run-glmark2-es2
+5c1bfdbfecea79976539a9bc96d54ea5  usr/share/applications/glmark2-es2.desktop
+39225306bc561e41dbe91012132a28be  usr/share/doc/glmark2-es2-desktop/changelog.Debian.gz
+e44dcefe0eddbb50311a16a5d0b689b1  usr/share/doc/glmark2-es2-desktop/copyright
+45d8b51b38e4a26116040dc679904335  usr/share/icons/hicolor/128x128/apps/glmark2.png
+eeffa22b61af253539668bd6236d5e9c  usr/share/icons/hicolor/24x24/apps/glmark2.png
+f62b7c88f0c9cb8dc5599bd1cf4c7c75  usr/share/icons/hicolor/256x256/apps/glmark2.png
+9a30ccac20a1fe0c940518acba868dbd  usr/share/icons/hicolor/48x48/apps/glmark2.png
+f4b501374bd0adaaa9363971c2078213  usr/share/icons/hicolor/512x512/apps/glmark2.png
+7ad5d61c9fa7a2161ba38c562ef0f53d  usr/share/icons/hicolor/64x64/apps/glmark2.png

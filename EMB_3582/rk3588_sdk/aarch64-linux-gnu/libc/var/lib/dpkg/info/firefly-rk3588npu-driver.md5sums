@@ -1,0 +1,7 @@
+f89b59cf928a8c6d6c8ad94abb89e37a  lib/systemd/system/rknn_server.service
+43dc2e4fb10237d6a4760da464f30808  usr/bin/restart_rknn.sh
+4468de1831324779ea51d815f7aad74c  usr/bin/rknn_server
+3fd14898749eea208e5fac54635d3e39  usr/bin/start_rknn.sh
+739fbdb223ffca9522b62c30d8773bc6  usr/include/rknn_api.h
+11a7cc46d761ab6c6a31730337d793e8  usr/include/rknn_matmul_api.h
+a423b86790b85385758e637cb6de2b24  usr/lib/librknnrt.so

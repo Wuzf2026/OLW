@@ -1,0 +1,4 @@
+04b74fac7c52e9fcaa4ef2f133a9a517  usr/lib/aarch64-linux-gnu/libavformat.so.58.29.100
+77c01ce25cf50324197fd5be1f2ee07d  usr/share/doc/libavformat58/changelog.Debian.gz
+001f538bf878ec438a4151e9e98daebd  usr/share/doc/libavformat58/copyright
+08eb19fe64a6feb5ff563df6016badef  usr/share/lintian/overrides/libavformat58

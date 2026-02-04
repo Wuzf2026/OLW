@@ -1,0 +1,4 @@
+6ab2c042f41f0975248a3a421cb59edc  usr/lib/aarch64-linux-gnu/libavutil.so.56.31.100
+77c01ce25cf50324197fd5be1f2ee07d  usr/share/doc/libavutil56/changelog.Debian.gz
+001f538bf878ec438a4151e9e98daebd  usr/share/doc/libavutil56/copyright
+2e564e76e24677ff9adbdd7bffbf4de9  usr/share/lintian/overrides/libavutil56

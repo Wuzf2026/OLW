@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+if dpkg-maintscript-helper supports mv_conffile; then
+  dpkg-maintscript-helper mv_conffile \
+    /etc/lightdm/lightdm-gtk-greeter-ubuntu.conf \
+    /etc/lightdm/lightdm-gtk-greeter.conf.d/01_ubuntu.conf \
+    2.0.1-1ubuntu1 -- "$@"
+fi
+
+# Automatically added by dh_installdeb/11.3.2ubuntu1
+dpkg-maintscript-helper rm_conffile /etc/lightdm/lightdm-gtk-greeter.conf.d/01_ubuntu.conf 2.0.1-2ubuntu3 -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb/11.3.2ubuntu1
+dpkg-maintscript-helper rm_conffile /etc/lightdm/lightdm-gtk-greeter-ubuntu.conf 2.0.1-2ubuntu3 -- "$@"
+# End automatically added section
+
+
+exit 0

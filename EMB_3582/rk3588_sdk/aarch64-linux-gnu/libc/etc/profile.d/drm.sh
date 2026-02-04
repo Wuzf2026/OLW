@@ -1,0 +1,5 @@
+C_INCLUDE_PATH=/usr/include/libdrm:$C_INCLUDE_PATH
+CPLUS_INCLUDE_PATH=/usr/include/libdrm:$CPLUS_INCLUDE_PATH
+
+export C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH

@@ -1,0 +1,8 @@
+/.
+/lib
+/lib/systemd
+/lib/systemd/system
+/lib/systemd/system/firefly-wdt.service
+/usr
+/usr/bin
+/usr/bin/firefly-wdt-ctl

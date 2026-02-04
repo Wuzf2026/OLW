@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/tftp
+/usr/share
+/usr/share/doc
+/usr/share/doc/tftp-hpa
+/usr/share/doc/tftp-hpa/README
+/usr/share/doc/tftp-hpa/changelog.Debian.gz
+/usr/share/doc/tftp-hpa/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/tftp.1.gz

@@ -1,0 +1,4 @@
+d62f272f1e903bfbb1709e439b7ec6ab  usr/lib/aarch64-linux-gnu/libswscale.so.5.5.100
+77c01ce25cf50324197fd5be1f2ee07d  usr/share/doc/libswscale5/changelog.Debian.gz
+001f538bf878ec438a4151e9e98daebd  usr/share/doc/libswscale5/copyright
+ad3f9b0f8b76dbbcfe9b9df8cf77e61f  usr/share/lintian/overrides/libswscale5

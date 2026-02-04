@@ -1,0 +1,2 @@
+ACTION=="add", ENV{ID_PART_ENTRY_NAME}=="oem", RUN+="/usr/bin/systemd-mount --no-block /dev/disk/by-partlabel/oem /oem"
+ACTION=="add", ENV{ID_PART_ENTRY_NAME}=="userdata", RUN+="/usr/bin/systemd-mount --no-block /dev/disk/by-partlabel/userdata /userdata"

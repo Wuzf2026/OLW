@@ -1,0 +1,7 @@
+fd8997b79cef6fa418bd50c9e349981e  usr/include/fdk-aac/FDK_audio.h
+62ce4d07305b1d49fec3a36b8c9e8a3a  usr/include/fdk-aac/aacdecoder_lib.h
+890d82289472cda447844af257ec703b  usr/include/fdk-aac/aacenc_lib.h
+846bfbabccb455d1fd7dcd66214f77c1  usr/include/fdk-aac/genericStds.h
+1ab79fe49f85b0652dc8a0a00b74a8ea  usr/include/fdk-aac/machine_type.h
+9fc307e4324000a403e9bfcb5a842209  usr/lib/aarch64-linux-gnu/pkgconfig/fdk-aac.pc
+0a7a0df8c8cfdaafd8863e2b1e326a82  usr/share/doc/libfdk-aac-dev/copyright

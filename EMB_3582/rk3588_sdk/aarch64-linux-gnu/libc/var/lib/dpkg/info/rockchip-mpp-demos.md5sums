@@ -1,0 +1,11 @@
+10527909545dff0b33b1df3b3b27e7d7  usr/bin/mpi_dec_mt_test
+c7afc0196a45300db73ade697f318d31  usr/bin/mpi_dec_multi_test
+b5ce505a54d83eec277b2e9f44540c33  usr/bin/mpi_dec_nt_test
+856a6cf80cdddfdab0f2718876eb5133  usr/bin/mpi_dec_test
+77e05f65185ec9536bd2abe4dcb85675  usr/bin/mpi_enc_mt_test
+5cb9eebca130387febdb1d3c0fb0097e  usr/bin/mpi_enc_test
+58c3fe46109903817ce499444ee6d571  usr/bin/mpi_rc2_test
+46fce36a3f491878f35f035f6e0ab082  usr/bin/mpp_info_test
+95255db1a1641f75791ecfe95fce3188  usr/bin/vpu_api_test
+356175ec2fdd33be726574bfe2fcf850  usr/share/doc/rockchip-mpp-demos/changelog.Debian.gz
+877f5b4a232ce6377fce6d913dd5b9ff  usr/share/doc/rockchip-mpp-demos/copyright

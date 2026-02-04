@@ -1,0 +1,7 @@
+Package: *
+Pin: release o=wiki.t-firefly.com/firefly-rk3588-repo
+Pin-Priority: 999
+
+Package: *
+Pin: release o=wiki.t-firefly.com/firefly-ubuntu-repo
+Pin-Priority: 900

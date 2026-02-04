@@ -1,0 +1,6 @@
+libc++ 1 chromium-x11
+libc++abi 1 chromium-x11
+libfreetype 6 chromium-x11
+libm 6 chromium-x11
+libmount 1 chromium-x11
+libstdc++ 6 chromium-x11

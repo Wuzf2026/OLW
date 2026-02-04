@@ -1,0 +1,4 @@
+d5d878311ebf48bac5a0f83f945bc7cb  usr/lib/aarch64-linux-gnu/libavcodec.so.58.54.100
+77c01ce25cf50324197fd5be1f2ee07d  usr/share/doc/libavcodec58/changelog.Debian.gz
+001f538bf878ec438a4151e9e98daebd  usr/share/doc/libavcodec58/copyright
+d9ed2899a07d73fbf211cc83c69687c3  usr/share/lintian/overrides/libavcodec58

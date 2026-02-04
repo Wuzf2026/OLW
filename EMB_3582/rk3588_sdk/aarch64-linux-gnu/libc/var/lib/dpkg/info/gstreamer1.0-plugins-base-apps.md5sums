@@ -1,0 +1,12 @@
+ef0313f4cf01398fc171523de900422f  usr/bin/gst-device-monitor-1.0
+3cb2bb01d9107e706ab1aeddd886b1c9  usr/bin/gst-discoverer-1.0
+f657000c5a32ea0347482a644d00f860  usr/bin/gst-play-1.0
+cd417fda468cfef6f3b7dcbba66dcb42  usr/share/doc/gstreamer1.0-plugins-base-apps/AUTHORS
+8acd94bfe3a109d61166938fd74e1c96  usr/share/doc/gstreamer1.0-plugins-base-apps/NEWS.gz
+2904599b37e146ff6b0a4bda46465187  usr/share/doc/gstreamer1.0-plugins-base-apps/README.Debian
+76ad594b30f5a93de9da6d020ea9893f  usr/share/doc/gstreamer1.0-plugins-base-apps/README.gz
+f49cda7d9dc3c84c976ce82300fb66fd  usr/share/doc/gstreamer1.0-plugins-base-apps/changelog.Debian.gz
+41bd7b94c1d38f696720990e7142e548  usr/share/doc/gstreamer1.0-plugins-base-apps/copyright
+491eb2baf932506b3e513c5efd400107  usr/share/man/man1/gst-device-monitor-1.0.1.gz
+071c361d948ee3296b5ebb784c1352dd  usr/share/man/man1/gst-discoverer-1.0.1.gz
+5732132e3764dab644ada02938708b8a  usr/share/man/man1/gst-play-1.0.1.gz

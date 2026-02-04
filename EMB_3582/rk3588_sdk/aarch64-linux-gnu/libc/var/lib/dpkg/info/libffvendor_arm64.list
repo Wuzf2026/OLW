@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/aarch64-linux-gnu
+/usr/lib/aarch64-linux-gnu/libaptvendor.so
+/usr/lib/aarch64-linux-gnu/libffvendor.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/libffvendor
+/usr/share/doc/libffvendor/README.Debian
+/usr/share/doc/libffvendor/changelog.gz
+/usr/share/doc/libffvendor/copyright
+/usr/share/menu
+/usr/share/menu/libffvendor

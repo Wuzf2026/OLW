@@ -1,0 +1,9 @@
+0ea37c766952ef76e3402f6ab9d3c58c  lib/systemd/system/firefly-fan.service
+1254cfc1270a5bfd7264b1166f504ec4  lib/systemd/system/firefly-POWER-button.service
+0645be4ad2dc9118c86749c7cc9ef04e  lib/systemd/system/firefly-UID-button.service
+8beb2b59a0fbe615fecbb9e98ace6177  usr/bin/firefly_fan_control
+b547e1f82d0477809a1aad91ff9f07ae  usr/bin/firefly-fan-init
+41ff24da00f83a6c8a4eaff590940743  usr/bin/firefly-POWER-button-init
+a4cd6a0e5488dbeb9bb586881c273530  usr/bin/firefly-UID-button-init
+6328e4630f19ac575ec12911e64df117  usr/bin/power_button
+2514fae65910661effdcc6dbc3362f70  usr/bin/UID_button

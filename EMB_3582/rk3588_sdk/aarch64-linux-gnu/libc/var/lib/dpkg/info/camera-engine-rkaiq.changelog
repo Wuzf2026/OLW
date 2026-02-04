@@ -1,0 +1,8 @@
+camera_engine_rkaiq (1.0.0-1) unstable; urgency=low
+
+    * b7ff35c6 aiq_pool: fix drc longframe_mode error caused by uninitialized RKAiqAecExpInfoWrapper_t
+    * 03b9e70d sync to commit 1ec4528, fix some ae/af/adrc bugs
+    * 7105462f release v5.0x3.0
+    ...
+
+ -- Caesar Wang <wxt@rock-chips.com>  Sun, 17 Sep 2023 18:04:00 +0800

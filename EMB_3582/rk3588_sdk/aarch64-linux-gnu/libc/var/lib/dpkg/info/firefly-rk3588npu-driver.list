@@ -1,0 +1,16 @@
+/.
+/lib
+/lib/systemd
+/lib/systemd/system
+/lib/systemd/system/rknn_server.service
+/usr
+/usr/bin
+/usr/bin/restart_rknn.sh
+/usr/bin/rknn_server
+/usr/bin/start_rknn.sh
+/usr/include
+/usr/include/rknn_api.h
+/usr/include/rknn_matmul_api.h
+/usr/lib
+/usr/lib/librknnrt.so
+/usr/lib/librknn_api.so

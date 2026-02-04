@@ -1,0 +1,6 @@
+fa066bd1acac8ba16d6125dfb3ccd29c  usr/lib/aarch64-linux-gnu/libaptvendor.so
+79c20c288fb2d291fde46edd47c348a2  usr/lib/aarch64-linux-gnu/libffvendor.so
+acec05baf6a7e3322fee59fcb756cfde  usr/share/doc/libffvendor/README.Debian
+9a150867d545e35213b5eb715ad91126  usr/share/doc/libffvendor/changelog.gz
+67f59e2abe7532b5db2220b727bb750b  usr/share/doc/libffvendor/copyright
+bfe6b61829a5e054952d7338165bea37  usr/share/menu/libffvendor

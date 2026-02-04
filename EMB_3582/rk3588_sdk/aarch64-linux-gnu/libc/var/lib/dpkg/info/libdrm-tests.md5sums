@@ -1,0 +1,10 @@
+fb4d4013934a0765c6639a3d75d8b832  usr/bin/drmdevice
+04ab13fad6f5ac106ff77c175f425ac6  usr/bin/kms-steal-crtc
+c7af300f02faaab5421c398f248074c7  usr/bin/kms-universal-planes
+5ab4c15a65d75bf544ab9b76ca1803cf  usr/bin/kmstest
+97145fb0e1ef55bbf33669aae80f30db  usr/bin/modeprint
+1c45ef5b3d2186186376442ebcfbc528  usr/bin/modetest
+33d7662b609aad877d5f1a7a5049638a  usr/bin/proptest
+6c1b76f25b29c7dd0cce37e7d56d0c05  usr/bin/vbltest
+8778c50d81a01411531fbb595a5e33dd  usr/share/doc/libdrm-tests/changelog.Debian.gz
+f877b409d7f2dfcf6e3e2a139d19798c  usr/share/doc/libdrm-tests/copyright

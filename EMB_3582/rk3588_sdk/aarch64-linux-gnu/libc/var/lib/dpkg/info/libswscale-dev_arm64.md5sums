@@ -1,0 +1,6 @@
+46a3f045c3a1fa38e8e0a5a37c311810  usr/include/aarch64-linux-gnu/libswscale/swscale.h
+8059b49d380698aa4846a73435b35837  usr/include/aarch64-linux-gnu/libswscale/version.h
+05a5b6ec36a099e81500136451f9daa8  usr/lib/aarch64-linux-gnu/libswscale.a
+013213bd1ff73d6dbb405051ce13f860  usr/lib/aarch64-linux-gnu/pkgconfig/libswscale.pc
+77c01ce25cf50324197fd5be1f2ee07d  usr/share/doc/libswscale-dev/changelog.Debian.gz
+001f538bf878ec438a4151e9e98daebd  usr/share/doc/libswscale-dev/copyright

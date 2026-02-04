@@ -1,0 +1,217 @@
+###############################################################################
+#
+#  MIME media types and programs that process those types
+#
+#  Much of this file is generated automatically by the program "update-mime".
+#  Please see the "update-mime" man page for more information.
+#
+#  Users can add their own rules if they wish by creating a ".mailcap"
+#  file in their home directory.  Entries included there will take
+#  precedence over those listed here.
+#
+###############################################################################
+
+
+###############################################################################
+#
+#  User section follows:  Any entries included in this section will take
+#  precedence over those created by "update-mime".  DO NOT CHANGE the
+#  "User Section Begins" and "User Section Ends" lines, or anything outside
+#  of this section!
+#
+
+# ----- User Section Begins ----- #
+# -----  User Section Ends  ----- #
+
+###############################################################################
+
+text/plain; less '%s'; needsterminal
+text/html; /usr/bin/sensible-browser %s; description=HTML Text; nametemplate=%s.html
+text/plain; more %s; needsterminal
+application/pdf; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+application/rdf+xml; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+application/rss+xml; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+application/xhtml+xml; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+application/xhtml_xml; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+application/xml; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+image/gif; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+image/jpeg; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+image/png; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+image/webp; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+text/html; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+text/xml; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+x-scheme-handler/http; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+x-scheme-handler/https; /usr/bin/chromium --incognito %s; test=test -n "$DISPLAY"
+inode/directory; exo-open --launch FileManager %s; test=test -n "$DISPLAY"
+x-scheme-handler/trash; exo-open --launch FileManager %s; test=test -n "$DISPLAY"
+x-scheme-handler/mailto; exo-open --launch MailReader %s; test=test -n "$DISPLAY"
+x-scheme-handler/http; exo-open --launch WebBrowser %s; test=test -n "$DISPLAY"
+x-scheme-handler/https; exo-open --launch WebBrowser %s; test=test -n "$DISPLAY"
+application/pkcs12; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs12+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs7-mime; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs7-mime+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs8; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs8+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-cert; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-cert+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-crl; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkix-crl+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pem-file; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pem-key; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pkcs12; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-pkcs7-certificates; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-x509-ca-cert; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-x509-user-cert; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs10; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/pkcs10+pem; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-spkac; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/x-spkac+base64; /usr/bin/gcr-viewer %s; test=test -n "$DISPLAY"
+application/mxf; parole --next %s; test=test -n "$DISPLAY"
+application/ogg; parole --next %s; test=test -n "$DISPLAY"
+application/ram; parole --next %s; test=test -n "$DISPLAY"
+application/sdp; parole --next %s; test=test -n "$DISPLAY"
+application/smil; parole --next %s; test=test -n "$DISPLAY"
+application/smil+xml; parole --next %s; test=test -n "$DISPLAY"
+application/vnd.apple.mpegurl; parole --next %s; test=test -n "$DISPLAY"
+application/vnd.ms-wpl; parole --next %s; test=test -n "$DISPLAY"
+application/vnd.rn-realmedia; parole --next %s; test=test -n "$DISPLAY"
+application/x-extension-m4a; parole --next %s; test=test -n "$DISPLAY"
+application/x-extension-mp4; parole --next %s; test=test -n "$DISPLAY"
+application/x-flac; parole --next %s; test=test -n "$DISPLAY"
+application/x-flash-video; parole --next %s; test=test -n "$DISPLAY"
+application/x-matroska; parole --next %s; test=test -n "$DISPLAY"
+application/x-netshow-channel; parole --next %s; test=test -n "$DISPLAY"
+application/x-ogg; parole --next %s; test=test -n "$DISPLAY"
+application/x-quicktime-media-link; parole --next %s; test=test -n "$DISPLAY"
+application/x-quicktimeplayer; parole --next %s; test=test -n "$DISPLAY"
+application/x-shorten; parole --next %s; test=test -n "$DISPLAY"
+application/x-smil; parole --next %s; test=test -n "$DISPLAY"
+application/xspf+xml; parole --next %s; test=test -n "$DISPLAY"
+audio/3gpp; parole --next %s; test=test -n "$DISPLAY"
+audio/ac3; parole --next %s; test=test -n "$DISPLAY"
+audio/AMR; parole --next %s; test=test -n "$DISPLAY"
+audio/AMR-WB; parole --next %s; test=test -n "$DISPLAY"
+audio/basic; parole --next %s; test=test -n "$DISPLAY"
+audio/flac; parole --next %s; test=test -n "$DISPLAY"
+audio/midi; parole --next %s; test=test -n "$DISPLAY"
+audio/mp2; parole --next %s; test=test -n "$DISPLAY"
+audio/mp4; parole --next %s; test=test -n "$DISPLAY"
+audio/mpeg; parole --next %s; test=test -n "$DISPLAY"
+audio/mpegurl; parole --next %s; test=test -n "$DISPLAY"
+audio/ogg; parole --next %s; test=test -n "$DISPLAY"
+audio/prs.sid; parole --next %s; test=test -n "$DISPLAY"
+audio/vnd.rn-realaudio; parole --next %s; test=test -n "$DISPLAY"
+audio/x-aiff; parole --next %s; test=test -n "$DISPLAY"
+audio/x-ape; parole --next %s; test=test -n "$DISPLAY"
+audio/x-flac; parole --next %s; test=test -n "$DISPLAY"
+audio/x-gsm; parole --next %s; test=test -n "$DISPLAY"
+audio/x-it; parole --next %s; test=test -n "$DISPLAY"
+audio/x-m4a; parole --next %s; test=test -n "$DISPLAY"
+audio/x-matroska; parole --next %s; test=test -n "$DISPLAY"
+audio/x-mod; parole --next %s; test=test -n "$DISPLAY"
+audio/x-mp3; parole --next %s; test=test -n "$DISPLAY"
+audio/x-mpeg; parole --next %s; test=test -n "$DISPLAY"
+audio/x-mpegurl; parole --next %s; test=test -n "$DISPLAY"
+audio/x-ms-asf; parole --next %s; test=test -n "$DISPLAY"
+audio/x-ms-asx; parole --next %s; test=test -n "$DISPLAY"
+audio/x-ms-wax; parole --next %s; test=test -n "$DISPLAY"
+audio/x-ms-wma; parole --next %s; test=test -n "$DISPLAY"
+audio/x-musepack; parole --next %s; test=test -n "$DISPLAY"
+audio/x-pn-aiff; parole --next %s; test=test -n "$DISPLAY"
+audio/x-pn-au; parole --next %s; test=test -n "$DISPLAY"
+audio/x-pn-realaudio; parole --next %s; test=test -n "$DISPLAY"
+audio/x-pn-realaudio-plugin; parole --next %s; test=test -n "$DISPLAY"
+audio/x-pn-wav; parole --next %s; test=test -n "$DISPLAY"
+audio/x-pn-windows-acm; parole --next %s; test=test -n "$DISPLAY"
+audio/x-realaudio; parole --next %s; test=test -n "$DISPLAY"
+audio/x-real-audio; parole --next %s; test=test -n "$DISPLAY"
+audio/x-s3m; parole --next %s; test=test -n "$DISPLAY"
+audio/x-sbc; parole --next %s; test=test -n "$DISPLAY"
+audio/x-scpls; parole --next %s; test=test -n "$DISPLAY"
+audio/x-speex; parole --next %s; test=test -n "$DISPLAY"
+audio/x-stm; parole --next %s; test=test -n "$DISPLAY"
+audio/x-tta; parole --next %s; test=test -n "$DISPLAY"
+audio/x-wav; parole --next %s; test=test -n "$DISPLAY"
+audio/x-wavpack; parole --next %s; test=test -n "$DISPLAY"
+audio/x-vorbis; parole --next %s; test=test -n "$DISPLAY"
+audio/x-vorbis+ogg; parole --next %s; test=test -n "$DISPLAY"
+audio/x-xm; parole --next %s; test=test -n "$DISPLAY"
+image/vnd.rn-realpix; parole --next %s; test=test -n "$DISPLAY"
+image/x-pict; parole --next %s; test=test -n "$DISPLAY"
+misc/ultravox; parole --next %s; test=test -n "$DISPLAY"
+text/google-video-pointer; parole --next %s; test=test -n "$DISPLAY"
+text/x-google-video-pointer; parole --next %s; test=test -n "$DISPLAY"
+video/3gp; parole --next %s; test=test -n "$DISPLAY"
+video/3gpp; parole --next %s; test=test -n "$DISPLAY"
+video/dv; parole --next %s; test=test -n "$DISPLAY"
+video/divx; parole --next %s; test=test -n "$DISPLAY"
+video/fli; parole --next %s; test=test -n "$DISPLAY"
+video/flv; parole --next %s; test=test -n "$DISPLAY"
+video/mp2t; parole --next %s; test=test -n "$DISPLAY"
+video/mp4; parole --next %s; test=test -n "$DISPLAY"
+video/mp4v-es; parole --next %s; test=test -n "$DISPLAY"
+video/mpeg; parole --next %s; test=test -n "$DISPLAY"
+video/msvideo; parole --next %s; test=test -n "$DISPLAY"
+video/ogg; parole --next %s; test=test -n "$DISPLAY"
+video/quicktime; parole --next %s; test=test -n "$DISPLAY"
+video/vivo; parole --next %s; test=test -n "$DISPLAY"
+video/vnd.divx; parole --next %s; test=test -n "$DISPLAY"
+video/vnd.mpegurl; parole --next %s; test=test -n "$DISPLAY"
+video/vnd.rn-realvideo; parole --next %s; test=test -n "$DISPLAY"
+video/vnd.vivo; parole --next %s; test=test -n "$DISPLAY"
+video/webm; parole --next %s; test=test -n "$DISPLAY"
+video/x-anim; parole --next %s; test=test -n "$DISPLAY"
+video/x-avi; parole --next %s; test=test -n "$DISPLAY"
+video/x-flc; parole --next %s; test=test -n "$DISPLAY"
+video/x-fli; parole --next %s; test=test -n "$DISPLAY"
+video/x-flic; parole --next %s; test=test -n "$DISPLAY"
+video/x-flv; parole --next %s; test=test -n "$DISPLAY"
+video/x-m4v; parole --next %s; test=test -n "$DISPLAY"
+video/x-matroska; parole --next %s; test=test -n "$DISPLAY"
+video/x-mpeg; parole --next %s; test=test -n "$DISPLAY"
+video/x-mpeg2; parole --next %s; test=test -n "$DISPLAY"
+video/x-ms-asf; parole --next %s; test=test -n "$DISPLAY"
+video/x-ms-asx; parole --next %s; test=test -n "$DISPLAY"
+video/x-msvideo; parole --next %s; test=test -n "$DISPLAY"
+video/x-ms-wm; parole --next %s; test=test -n "$DISPLAY"
+video/x-ms-wmv; parole --next %s; test=test -n "$DISPLAY"
+video/x-ms-wmx; parole --next %s; test=test -n "$DISPLAY"
+video/x-ms-wvx; parole --next %s; test=test -n "$DISPLAY"
+video/x-nsv; parole --next %s; test=test -n "$DISPLAY"
+video/x-ogm+ogg; parole --next %s; test=test -n "$DISPLAY"
+video/x-theora+ogg; parole --next %s; test=test -n "$DISPLAY"
+video/x-totem-stream; parole --next %s; test=test -n "$DISPLAY"
+x-content/video-dvd; parole --next %s; test=test -n "$DISPLAY"
+x-content/video-vcd; parole --next %s; test=test -n "$DISPLAY"
+x-content/video-svcd; parole --next %s; test=test -n "$DISPLAY"
+x-scheme-handler/mms; parole --next %s; test=test -n "$DISPLAY"
+x-scheme-handler/mmsh; parole --next %s; test=test -n "$DISPLAY"
+application/x-desktop; xfce4-panel --add=launcher %s; test=test -n "$DISPLAY"
+inode/directory; thunar %s; test=test -n "$DISPLAY"
+text/english; vim %s; needsterminal
+text/plain; vim %s; needsterminal
+text/x-makefile; vim %s; needsterminal
+text/x-c++hdr; vim %s; needsterminal
+text/x-c++src; vim %s; needsterminal
+text/x-chdr; vim %s; needsterminal
+text/x-csrc; vim %s; needsterminal
+text/x-java; vim %s; needsterminal
+text/x-moc; vim %s; needsterminal
+text/x-pascal; vim %s; needsterminal
+text/x-tcl; vim %s; needsterminal
+text/x-tex; vim %s; needsterminal
+application/x-shellscript; vim %s; needsterminal
+text/x-c; vim %s; needsterminal
+text/x-c++; vim %s; needsterminal
+text/plain; view %s; edit=vim %s; compose=vim %s; test=test -x /usr/bin/vim; needsterminal
+application/zip; unzip -l %s; nametemplate=%s.zip; copiousoutput
+text/plain; view %s; edit=vi %s; compose=vi %s; needsterminal
+text/*; less '%s'; needsterminal
+text/*; view %s; edit=vim %s; compose=vim %s; test=test -x /usr/bin/vim; needsterminal
+application/x-tar; /bin/tar tvf '%s'; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+application/x-gtar; /bin/tar tvf '%s'; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+application/x-ustar; /bin/tar tvf '%s'; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+text/*; more %s; needsterminal
+text/*; view %s; edit=vi %s; compose=vi %s; needsterminal
+application/vnd.debian.binary-package; /usr/lib/mime/debian-view %s; needsterminal; description=Debian GNU/Linux Package; nametemplate=%s.deb

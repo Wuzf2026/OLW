@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/fbterm
+/usr/share
+/usr/share/doc
+/usr/share/doc/fbterm
+/usr/share/doc/fbterm/README
+/usr/share/doc/fbterm/README.Debian
+/usr/share/doc/fbterm/changelog.Debian.gz
+/usr/share/doc/fbterm/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/fbterm.1.gz
+/usr/share/terminfo
+/usr/share/terminfo/f
+/usr/share/terminfo/f/fbterm

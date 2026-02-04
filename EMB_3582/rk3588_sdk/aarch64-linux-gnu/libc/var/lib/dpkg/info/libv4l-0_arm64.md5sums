@@ -1,0 +1,14 @@
+00b050360d38871cbee6d1cf450ccb23  usr/lib/aarch64-linux-gnu/libv4l/plugins/libv4l-mplane.so
+127e08102b3f81213d9c23aab5017d42  usr/lib/aarch64-linux-gnu/libv4l/v4l1compat.so
+f949c29abd5cd61bf7927267c18031d7  usr/lib/aarch64-linux-gnu/libv4l/v4l2convert.so
+07fefb5d18953f178c328f5ea27a1268  usr/lib/aarch64-linux-gnu/libv4l1.so.0.0.0
+e18c5613c3b59183f3c5715117006ba3  usr/lib/aarch64-linux-gnu/libv4l2.so.0.0.0
+b8490b6d22321b3cb75fb6dd2f40aca8  usr/share/doc/libv4l-0/README.Debian
+9ec058ef384992973b2e0152c4324c40  usr/share/doc/libv4l-0/README.gz
+b54692bec80cb41a01b9209a0b3ff995  usr/share/doc/libv4l-0/README.lib-multi-threading
+f03896322bb0a85f8708d473400978e0  usr/share/doc/libv4l-0/README.libv4l.gz
+f5c231424eb4394531115d4f28c4fe97  usr/share/doc/libv4l-0/TODO
+92adfdbe1ed7158262428578236797c6  usr/share/doc/libv4l-0/changelog.Debian.gz
+aecc9f886f0eb166e66715ce4ca20a2d  usr/share/doc/libv4l-0/changelog.gz
+f5e022ccf3e8c47d818a0f45f91e8788  usr/share/doc/libv4l-0/copyright
+8394f678b593871c4a95f4f4d0872179  usr/share/lintian/overrides/libv4l-0

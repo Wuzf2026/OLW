@@ -1,0 +1,1 @@
+KERNEL=="ttysWK[0-9]", GROUP="dialout"

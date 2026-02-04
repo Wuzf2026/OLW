@@ -1,0 +1,5 @@
+console-setup console-setup/fontsize-fb47 select 8x16
+console-setup console-setup/fontface47 select Fixed
+console-setup console-setup/charmap47 select UTF-8
+console-setup console-setup/codeset47 select . Arabic
+

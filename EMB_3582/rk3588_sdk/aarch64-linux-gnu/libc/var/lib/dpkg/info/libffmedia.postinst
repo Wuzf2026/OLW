@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+	configure)
+	if cat /etc/issue | grep -q 22.04;then
+	        cd /usr/lib/aarch64-linux-gnu/
+		ln -sf libfdk-aac.so.2 libfdk-aac.so.1
+	fi
+esac
+
+

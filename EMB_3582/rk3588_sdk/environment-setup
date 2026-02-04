@@ -1,0 +1,16 @@
+SDK_PATH=$(dirname $(realpath "${BASH_SOURCE[0]:-$0}"))
+export PATH="${SDK_PATH}/bin:${SDK_PATH}/sbin:$PATH"
+
+export CC="aarch64-linux-gnu-gcc"
+export CPP="aarch64-linux-gnu-cpp"
+export CROSS_COMPILE="aarch64-linux-gnu-"
+export CROSS_PREFIX="aarch64-linux-gnu-"
+export SYSROOT="${SDK_PATH}/aarch64-linux-gnu/libc"
+export LDFLAGS="-Wl,-rpath-link,${SYSROOT}/usr/lib/aarch64-linux-gnu:${SYSROOT}/usr/lib:${SYSROOT}/lib/aarch64-linux-gnu:${SYSROOT}/lib"
+
+export PKG_CONFIG_PATH=""
+export PKG_CONFIG_LIBDIR="${SYSROOT}/usr/local/lib/aarch64-linux-gnu/pkgconfig:${SYSROOT}/usr/local/lib/pkgconfig:${SYSROOT}/usr/local/share/pkgconfig:${SYSROOT}/usr/lib/aarch64-linux-gnu/pkgconfig:${SYSROOT}/usr/lib/pkgconfig:${SYSROOT}/usr/share/pkgconfig"
+export PKG_CONFIG_SYSROOT_DIR="${SYSROOT}"
+
+alias configure="./configure --host=aarch64-linux-gnu --prefix=/usr"
+alias cmake="cmake -DCMAKE_TOOLCHAIN_FILE=$SDK_PATH/toolchainfile.cmake -DCMAKE_INSTALL_PREFIX=/usr"

@@ -1,0 +1,10 @@
+
+扩展安全维护（ESM）Infrastructure 未启用。
+
+76 更新可以立即应用。
+这些更新中有 67 个是标准安全更新。
+要查看这些附加更新，请运行：apt list --upgradable
+
+启用 ESM Infra 来获取未来的额外安全更新
+See https://ubuntu.com/esm or run: sudo pro status
+

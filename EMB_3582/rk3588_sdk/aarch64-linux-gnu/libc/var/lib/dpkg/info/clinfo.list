@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/clinfo
+/usr/share
+/usr/share/doc
+/usr/share/doc/clinfo
+/usr/share/doc/clinfo/README.md
+/usr/share/doc/clinfo/changelog.Debian.gz
+/usr/share/doc/clinfo/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/clinfo.1.gz
