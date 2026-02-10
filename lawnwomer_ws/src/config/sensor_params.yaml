@@ -1,0 +1,43 @@
+# 传感器配置参数文件
+# 激光雷达配置
+laser_scanner:
+  device_ip: "192.168.1.201"
+  udp_port: 2368
+  ptc_port: 9347
+  correction_file: "config/hesai_jt128_correction.yaml"
+  firetimes_file: "config/hesai_jt128_firetimes.yaml"
+  frame_id: "laser_link"
+# 深度相机配置
+depth_camera:
+  width: 1280
+  height: 800
+  fps: 30.0
+  frame_id: "camera_link"
+  serial_number: "GEMINI335_00000001"
+# RTK GPS配置
+rtk_gps:
+  port: "/dev/ttyUSB0"
+  baudrate: 115200
+  frame_id: "gps_link"
+  ntrip_server: "ntrip.example.com"
+  ntrip_port: 2101
+  ntrip_user: "user"
+  ntrip_password: "password"
+  ntrip_mountpoint: "RTCM3"
+# 超声波雷达配置
+ultrasonic_array:
+  port: "/dev/ttyUSB1"
+  baudrate: 115200
+  num_sensors: 8
+  max_range: 5.0  # 米
+  min_range: 0.02  # 米
+  field_of_view: 0.3  # 弧度
+  frame_id_prefix: "ultrasonic_"
+# 电机控制器配置
+motor_controller:
+  can_interface: "can0"
+  wheel_base: 0.5  # 米
+  wheel_radius: 0.1  # 米
+  max_speed: 2.0  # 米/秒
+  max_acceleration: 1.0  # 米/秒²
+  motor_ids: [1, 2]  # 左轮和右轮ID

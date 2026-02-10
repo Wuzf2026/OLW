@@ -1,0 +1,7 @@
+# 传感器配置服务定义
+string sensor_type  # "laser", "camera", "gps", "ultrasonic"
+string parameter
+string value
+---
+bool success
+string message

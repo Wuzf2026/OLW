@@ -1,0 +1,42 @@
+# 机器人几何参数文件
+# 机器人尺寸
+robot_dimensions:
+  length: 0.8  # 米
+  width: 0.6   # 米
+  height: 0.3  # 米
+# 质量参数
+robot_mass:
+  total_mass: 30.0  # 公斤
+  center_of_mass: [0.0, 0.0, 0.15]  # 相对于底盘中心的偏移
+# 车轮参数
+wheel_parameters:
+  left_wheel:
+    position: [-0.25, 0.0, 0.0]  # 相对于底盘中心
+    radius: 0.1
+    width: 0.08
+    
+  right_wheel:
+    position: [0.25, 0.0, 0.0]
+    radius: 0.1
+    width: 0.08
+# 传感器安装位置
+sensor_positions:
+  laser_scanner:
+    position: [0.0, 0.0, 0.3]
+    orientation: [0, 0, 0]  # 欧拉角（弧度）
+    
+  depth_camera:
+    position: [0.0, 0.0, 0.4]
+    orientation: [0, 0, 0]
+    
+  rtk_gps:
+    position: [0.0, 0.2, 0.5]
+    orientation: [0, 0, 0]
+    
+  ultrasonic_front:
+    position: [0.3, 0.0, 0.2]
+    orientation: [0, 0, 0]
+    
+  ultrasonic_rear:
+    position: [-0.3, 0.0, 0.2]
+    orientation: [0, 0, 0]

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <name>lawnwomer_ws</name>
+  <version>1.0.0</version>
+  <description>Lawn Mower Robot ROS Workspace</description>
+  <maintainer email="95211705@qq.com">Wuzf</maintainer>
+  <license>Apache License 2.0</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  <!-- 第三方依赖 -->
+  <run_depend>libboost-all-dev</run_depend>
+  <run_depend>libyaml-cpp-dev</run_depend>
+  <run_depend>libusb-1.0-0-dev</run_depend>
+  <run_depend>libpcap-dev</run_depend>
+</package>

@@ -1,0 +1,93 @@
+移动端：
+
+config com1 115200
+config com2 115200
+config com3 115200
+unlog com1
+unlog com2
+unlog com3
+mode rover
+saveconfig
+
+# 设置 Type C 接口输出
+gpgga com1 0.1
+gprmc com1 0.1
+gpvtg com1 0.1
+gpths com1 0.1
+agrica com1 0.1
+gpgsa com1 0.1
+gpgst com1 0.1
+gpzda com1 0.1
+uniheadinga com1 0.1
+saveconfig
+
+# 设置 GH1.25 7pin 接口输出
+gpgga com2 0.1
+gprmc com2 0.1
+gpvtg com2 0.1
+gpths com2 0.1
+agrica com2 0.1
+gpgsa com2 0.1
+gpgst com2 0.1
+gpzda com2 0.1
+uniheadinga com2 0.1
+saveconfig
+
+# 设置 GH1.25 4pin 和 GH1.25 5pin 接口输出
+gpgga com3 0.1
+gprmc com3 0.1
+gpvtg com3 0.1
+gpths com3 0.1
+agrica com3 0.1
+gpgsa com3 0.1
+gpgst com3 0.1
+gpzda com3 0.1
+uniheadinga com3 0.1
+saveconfig
+
+######################################
+注意：基站通常不需要高频通信，否则数据易堵塞，因此设置为2Hz即可
+
+基站端：
+
+config com1 115200
+config com2 115200
+config com3 115200
+unlog com1
+unlog com2
+unlog com3
+mode base time 60 2 2.5
+saveconfig
+
+# 设置 Type C 接口输出
+gpgga com1 0.5
+gpgll com1 0.5
+gpgsa com1 0.5
+gpgsv com1 0.5
+gprmc com1 0.5
+gpvtg com1 0.5
+rtcm1006 com1 0.5
+rtcm1033 com1 0.5
+rtcm1074 com1 0.5
+rtcm1124 com1 0.5
+rtcm1084 com1 0.5
+rtcm1094 com1 0.5
+saveconfig
+
+# 设置 GH1.25 7pin 接口输出
+rtcm1006 com2 0.5
+rtcm1033 com2 0.5
+rtcm1074 com2 0.5
+rtcm1124 com2 0.5
+rtcm1084 com2 0.5
+rtcm1094 com2 0.5
+saveconfig
+
+# 设置 GH1.25 4pin 和 GH1.25 5pin 接口输出
+rtcm1006 com3 0.5
+rtcm1033 com3 0.5
+rtcm1074 com3 0.5
+rtcm1124 com3 0.5
+rtcm1084 com3 0.5
+rtcm1094 com3 0.5
+saveconfig

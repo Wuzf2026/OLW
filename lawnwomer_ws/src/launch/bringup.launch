@@ -1,0 +1,58 @@
+<launch>
+  <!-- 声明参数 -->
+  <arg name="laser_config" default="$(find lawnwomer)/config/sensor_params.yaml" />
+  <arg name="robot_config" default="$(find lawnwomer)/config/robot_params.yaml" />
+  <arg name="control_config" default="$(find lawnwomer)/config/control_params.yaml" />
+  <arg name="simulation" default="false" />
+  <!-- 环境配置 -->
+  <env name="ROS_MASTER_URI" value="http://localhost:11311" />
+  <env name="ROS_IP" value="127.0.0.1" />
+  <!-- 核心节点启动 -->
+  <node name="lawnmower_node" pkg="lawnwomer" type="lawnmower_node" output="screen">
+    <param name="laser_config" value="$(arg laser_config)" />
+    <param name="robot_config" value="$(arg robot_config)" />
+    <param name="control_config" value="$(arg control_config)" />
+    <param name="simulation" value="$(arg simulation)" />
+  </node>
+  <!-- 传感器节点启动 -->
+  <group if="$(eval not '$(arg simulation)')">
+    <!-- 激光雷达 -->
+    <node name="hesai_lidar" pkg="hesai_lidar" type="hesai_lidar_node" output="screen">
+      <param name="config_file" value="$(find lawnwomer)/config/hesai_lidar.yaml" />
+    </node>
+    
+    <!-- 深度相机 -->
+    <node name="orbbec_camera" pkg="orbbec_camera" type="orbbec_camera_node" output="screen" />
+    
+    <!-- RTK GPS -->
+    <node name="rtk_gps" pkg="rtk_gps" type="rtk_gps_node" output="screen">
+      <param name="port" value="/dev/ttyUSB0" />
+      <param name="baudrate" value="115200" />
+    </node>
+    
+    <!-- 超声波雷达 -->
+    <node name="ultrasonic_array" pkg="ultrasonic" type="ultrasonic_node" output="screen">
+      <param name="port" value="/dev/ttyUSB1" />
+      <param name="baudrate" value="115200" />
+      <param name="num_sensors" value="8" />
+    </node>
+  </group>
+  <!-- 电机控制节点 -->
+  <node name="motor_controller" pkg="motor_control" type="motor_controller_node" output="screen">
+    <param name="can_interface" value="can0" />
+  </node>
+  <!-- 服务节点启动 -->
+  <node name="sensor_config_server" pkg="lawnwomer" type="sensor_config_server" output="screen" />
+  <node name="system_control_server" pkg="lawnwomer" type="system_control_server" output="screen" />
+  <!-- 调试工具（可选） -->
+  <node name="lawnmower_debugger" pkg="lawnwomer" type="debugger.py" output="screen" required="false" />
+  <!-- TF广播 -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_laser" 
+        args="0 0 0.3 0 0 0 base_link laser_link 100" />
+        
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_camera" 
+        args="0 0 0.4 0 0 0 base_link camera_link 100" />
+        
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_gps" 
+        args="0 0.2 0.5 0 0 0 base_link gps_link 100" />
+</launch>
