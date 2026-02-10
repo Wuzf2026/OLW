@@ -1,0 +1,110 @@
+瑞芯微平台linux系统U盘刷机步骤
+
+以下操作在linux环境下
+
+
+1. 准备一个容量在8GB或以上U盘，格式化为ext4格式 
+
+2. 获取完整烧机包解压缩
+如解压 RK3588-Linux-General-EMB-3582-V12-Ubuntu20.04-Gnome-rk3588-20251226-d94159286d.tar.gz
+得到 RK3588-Linux-General-EMB-3582-V12-Ubuntu20.04-Gnome-rk3588-20251226文件夹
+
+3. 拷贝RK3588-Linux-General-EMB-3582-V12-Ubuntu20.04-Gnome-rk3588-20251226/NC-BOOT目录中的nc_boot文件夹到U盘跟目录
+
+3. 拷贝RK3588-Linux-General-EMB-3582-V12-Ubuntu20.04-Gnome-rk3588-20251226目录中update.img文件到U盘的nc_boot/update文件夹中
+
+
+
+将U盘插在工控板USB口上， 重新上电， 会自动启动系统刷机，完成后会自动重启。 
+
+
+在Ubuntu系统中，挂载U盘通常涉及以下几个步骤。这里我将指导你如何通过命令行来实现U盘的挂载。
+
+1. 查找U盘设备
+首先，你需要找出U盘在系统中的设备文件。你可以使用lsblk命令来查看所有块设备，包括U盘。
+
+bash
+Copy Code
+lsblk
+这个命令会列出所有块设备，包括硬盘、U盘等。通常，U盘会显示为/dev/sdb1、/dev/sdc1等，具体取决于系统识别到的是哪个设备。
+
+2. 创建挂载点
+接下来，你需要创建一个挂载点，这是文件系统的一个目录，U盘设备将被挂载到这个目录。你可以使用mkdir命令来创建一个新的目录作为挂载点。
+
+bash
+Copy Code
+sudo mkdir /mnt/usb
+这里，/mnt/usb是挂载点目录的路径，你可以根据需要选择其他路径或名称。
+
+3. 挂载U盘
+使用mount命令将U盘挂载到之前创建的挂载点。你需要知道U盘的设备和挂载点的路径。
+
+bash
+Copy Code
+sudo mount /dev/sdb1 /mnt/usb
+请将/dev/sdb1替换为你的U盘设备文件路径。
+
+4. 验证挂载
+挂载完成后，你可以使用df -h或ls /mnt/usb来验证U盘是否已经成功挂载。
+
+bash
+Copy Code
+df -h
+或者
+
+bash
+Copy Code
+ls /mnt/usb
+5. 卸载U盘（可选）
+当你不再需要访问U盘时，应该将其卸载以避免数据丢失或损坏。使用umount命令来卸载U盘。
+
+bash
+Copy Code
+sudo umount /mnt/usb
+
+
+git push -f origin main
+error: RPC failed; HTTP 500 curl 22 The requested URL returned error: 500
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+
+https://github.com/Wuzf2026/OLW.git
+git remote set-url origin git@https://github.com/Wuzf2026/OLW.git
+
+U盘因写保护无法格式化，通常是由于物理开关锁定、系统设置、文件系统错误或硬件故障导致。?解决思路是从最简单、最安全的操作开始尝试，逐步深入，并在操作前务必备份重要数据?。
+
+常规排查与基础修复
+检查物理写保护开关?：部分U盘侧面或尾部有“Lock”滑动开关，将其拨到解锁位置后重新插入尝试格式化。?
+1
+2
+使用Windows系统工具解除逻辑保护?：
+通过磁盘属性修改权限?：右键点击U盘选择“属性”->“安全”->“编辑”，选中“Everyone”并勾选“完全控制”后确定。?
+3
+4
+修改注册表?（适用于病毒或系统设置导致）：按Win+R输入regedit打开注册表编辑器，导航到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorageDevicePolicies，双击右侧的“WriteProtect”键值，将其数值数据改为0，重启电脑。?
+2
+5
+使用命令提示符清除只读属性?：以管理员身份运行命令提示符，依次输入以下命令（每行后按回车）：diskpart -> list disk -> select disk X（X为你的U盘磁盘编号）-> attributes disk clear readonly -> exit。完成后重启电脑再尝试格式化。?
+1
+6
+使用磁盘管理工具格式化?：按Win+X选择“磁盘管理”，找到U盘分区，右键选择“格式化”或先“删除卷”再“新建简单卷”。?
+7
+8
+扫描病毒或修复磁盘错误?：
+查杀病毒?：在Windows安全中心选择“病毒和威胁防护”->“扫描选项”->“自定义扫描”，选择U盘所在驱动器进行扫描。?
+2
+9
+运行CHKDSK检查修复?：以管理员身份运行命令提示符，输入chkdsk G: /f /r /x（将G替换为你的U盘盘符）并回车。?
+2
+9
+检查并修复驱动器?：在U盘属性窗口的“工具”选项卡下，点击“检查”->“扫描并修复驱动器”。?
+4
+10
+进阶与备选方案
+使用第三方格式化工具?：如果系统工具无效，可尝试使用专业的磁盘管理软件（如傲梅分区助手）。安装后打开软件，右键点击U盘选择“格式化”，设置文件系统后提交执行。?
+1
+2
+排查硬件故障?：尝试更换电脑USB端口或数据线，并在其他电脑上测试。若U盘仍无法识别或显示0容量，可能是物理损坏。如果U盘在保修期内，可联系制造商寻求帮助。?
+1
+7
